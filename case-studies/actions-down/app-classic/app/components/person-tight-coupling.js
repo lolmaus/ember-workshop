@@ -11,7 +11,7 @@ export default Component.extend({
   fullName: computed('person.{firstName,lastName', function () {
     const fullName = `${this.person.firstName} ${this.person.lastName}`;
 
-    this.set('fullNameLength', fullName.length); // This is wrong
+    this.set('fullNameLength', fullName.length); // This should be refactored.
 
     return fullName;
   }),
